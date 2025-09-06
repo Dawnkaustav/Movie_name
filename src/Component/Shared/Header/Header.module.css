@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+.header {
+  @apply w-full flex justify-between items-center p-4 bg-gray-900 shadow border-b-red-500 border-b-4;
+}
+
+.logo {
+  @apply h-[50px];
+}
+
+.link {
+  @apply flex gap-6 items-center text-white;
+}
+
+.linkconnect {
+  @apply cursor-pointer hover:text-red-500;
+}
+
+.userimage {
+  @apply h-8 w-8 rounded-full border;
+}

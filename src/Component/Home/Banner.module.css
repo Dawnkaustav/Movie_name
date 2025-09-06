@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+#app {
+  height: 100%;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+}
+
+.swiper {
+  width: 80%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+/* Make active slide pop slightly */
+.swiper-slide-active {
+  transform: scale(1.05);
+}
+
+/* Slide images */
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mySwiper {
+  width: 80%;
+  height: 100%;
+  position: relative;
+}
+
+.mySwiper img {
+  border-radius: 1rem; /* smooth rounded corners */
+}
+
+.slider_image {
+  @apply w-full h-[90vh] object-cover;
+}
+
+/* Navigation buttons (proportional) */
+.swiper-button-prev,
+.swiper-button-next {
+  background: rgba(255, 255, 255, 0.8);
+  width: 3vw;
+  height: 3vw;
+  max-width: 45px;
+  max-height: 45px;
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  transition: background 0.3s ease;
+}
+
+.swiper-button-prev {
+  left: 1vw;
+}
+
+.swiper-button-next {
+  right: 1vw;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+/* Arrow scaling */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 1.2vw;
+  color: black;
+  font-weight: bold;
+}
+
