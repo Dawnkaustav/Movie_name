@@ -18,7 +18,7 @@ import banner3 from "../../assets/banner3.jpg";
 const Banner = () => {
   return (
     <Swiper
-        slidesPerView={1.2}   
+        slidesPerView={1}   
         centeredSlides={true}  
         spaceBetween={20} 
         loop={true}
